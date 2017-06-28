@@ -1,0 +1,242 @@
+.inline-link {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  color: #333;
+  transition: .5s;
+}
+
+
+
+
+
+.testimonial {
+  text-align: center;
+  /*background: lightcoral;*/
+}
+
+  .testimonial__image {
+    width: 12.5rem; /*[2]*/
+    border-radius: 50%; /*[3]*/
+  }
+
+  .testimonial__author,
+  .testimonial__location {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .testimonial__author {
+    font-size: 1.125rem; 
+    text-transform: uppercase;
+  }
+
+  .testimonial__location {
+    font-size: .75rem;
+  }
+
+
+
+
+
+.team-card {
+  text-align: center; 
+  /*background: lightcoral;*/ 
+}
+
+  .team-card__flavor-text,
+  .team-card__name {
+    margin-bottom: 1rem; 
+  }
+
+  .team-card__flavor-text {
+    color: #bdbdbd;
+  }
+
+  .team-card__flavor-text::after { 
+    content: '';
+    display: block;
+    width: 33.3%;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    margin: .5rem auto 0;
+  }
+
+
+  .team-card__name {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+  }
+
+
+  .team-card__social-icon { 
+    display: inline-block; 
+    margin-right: 1rem; 
+    color: #333;
+    cursor: pointer;
+  }
+
+    .team-card__social-icon:last-child { 
+      margin-right: 0;
+    }
+
+    .team-card__social-icon:hover {
+      color: #bdbdbd;
+      transition: .5s;
+    }    
+
+
+
+
+
+
+
+
+
+.company-data {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+  .company-data__list-item {
+    text-align: left;
+  }
+
+
+
+
+
+.question {
+  margin-bottom: .5rem;
+}
+
+
+
+
+
+.pricing-lead__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+
+  .pricing-lead__list-item {
+    counter-increment: step-counter; 
+    margin-bottom: .5rem; 
+    position: relative; 
+    padding-left: 1.875rem; 
+  }
+
+
+  .pricing-lead__list-item::before {
+    content: counter(step-counter); 
+    display: inline-block; 
+    position: absolute; 
+    left: 0; 
+    top: 2px; 
+    line-height: 100%;
+    padding: .125rem .375rem;  
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: .875rem;
+  }
+
+
+
+
+
+.pricing-card {
+  text-align: center; 
+  color: #f2f2f2; 
+}
+
+@media (min-width: 768px) {
+  
+  .pricing-card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  }
+
+}
+
+
+.pricing-card__tagline {
+  padding-top: 1.5rem; 
+}
+
+.pricing-card__tagline::after { 
+    content: '';
+    display: block;
+    width: 33.3%;
+    height: 2px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin: .5rem auto 0;
+  }
+
+
+.pricing-card__tour-name { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+
+
+.pricing-card__feature-list {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0 0 1.5rem;
+}
+
+
+.pricing-card__feature {
+  border-bottom: 1px solid #f2f2f2; 
+  margin-bottom: 1rem; 
+  padding-bottom: 1rem; 
+}
+
+
+.pricing-card__button {
+  margin-bottom: 1.5rem; 
+}
+
+
+.pricing-card__price {
+  padding-bottom: 1.5rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+
+.pricing-card--historical { 
+  background: #fc9b4d;
+}
+
+.pricing-card--culinary { 
+  background: #bacc14;
+}
+
+.pricing-card--art { 
+  background: #fd6062;
+}
+
+@media (min-width: 768px) {
+  
+  .pricing-card--art {
+    transform: scale(1.04);
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+  }
+
+}
+
+
+
+
